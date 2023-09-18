@@ -100,7 +100,7 @@ If you want to avoid VPNs entirely, the simplest way is to use a SIM card from H
 21. **Add Inbound Rules:**
     - Refresh the admin panel and go to "Inbound" -> "Add inbound."
     - Use the settings for "VLESS + XTLS + uTLS + REALITY."
-    - Set the remark to your hostname and port to "443."
+    - Set the remark to your hostname (Step 8) and port to "443." 
     - Toggle to enable "reality."
 
 *Note: Don’t worry if your information below the “reality” row is different to the screenshot as those are automatically populated.*
