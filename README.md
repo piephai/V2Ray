@@ -141,4 +141,4 @@ If you want to avoid VPNs entirely, the simplest way is to use a SIM card from H
 4. **Connect:**
    - Connect to the V2ray server by clicking the connect button in the V2ray client.
 
-Please note that specific instructions for the V2ray client may vary based on the client you choose.
+*Please note that specific instructions for the V2ray client may vary based on the client you choose.*
