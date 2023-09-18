@@ -59,7 +59,7 @@ If you want to avoid VPNs entirely, the simplest way is to use a SIM card from H
     - Run the command `apt update && apt upgrade` to update the server with the latest packages. When prompted, type "y" and press Enter to confirm.
 
 14. **Install X-Ray:**
-    - Run the command `bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install_en.sh)` (without quotation marks).
+    - Run the command `bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install_en.sh)`.
 
 15. **X-Ray Configuration:**
     - Follow the prompts for X-Ray installation:
@@ -67,7 +67,7 @@ If you want to avoid VPNs entirely, the simplest way is to use a SIM card from H
       - Set up your username and password for the x-ui admin panel.
       - Set the port to "54321."
       
-16. **Access the Admin Panel:**
+16. **Enable BBR:**
     - Type "x-ui" and press Enter.
     - Type "15" and press Enter to enable BBR.
 
