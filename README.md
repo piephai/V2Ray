@@ -6,7 +6,7 @@
 
 1. **Create a Digital Ocean Account:**
    - Sign up for a Digital Ocean account using a referral link, like this one: [Digital Ocean Referral Link](https://m.do.co/c/648197605dfe) this will give you $200 of credit to be used witihin 2 months.
-   - Note: Students can get $200 credit for a year via Github Education.
+   - Note: Students can get $200 credit that is valid for year via Github Education.
 
 2. **Add Billing Information:**
    - Add your billing information by linking a credit card to your Digital Ocean account. While other cloud providers can be used, AWS is not recommended due to potential issues.
