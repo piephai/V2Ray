@@ -1,5 +1,13 @@
 # V2ray Server Setup Guide
 
+I attempted to install V2Ray on several cloud hosting platforms, including AWS (including Lightsail) and Digital Ocean. Despite experimenting with numerous configurations, I was unable to locate a configuration that can reliably penetrate China's Great Firewall on AWS servers. Vultr had trouble accepting my payment card, so I had to look for options. I opted to use Digital Ocean. Digital Ocean has been running smoothly over several weeks, with excellent reliability and negligible speed loss.
+
+Since each server only costs $5 a month in China, using this system has been economical. Although there is the potential for commercial use, my main objective is to provide this information to travellers to China so they can avoid spending $30/month on services like Astrill that frequently require moving between servers. Both Astrill and the V2Ray, in my experience, worked, however I found the V2Ray setup to be more dependable.
+
+However, there are a few drawbacks as compared to other VPNs like Astrill, such as the lack of URL-specific bypasses. This may not be a major concern for me while travelling in China, but it may be an issue if you plan to reside here for an extended period of time.
+
+If you want to avoid VPNs entirely, the simplest way is to use a SIM card from Hong Kong (if you're flying in from there) or roam with a SIM card from your home country. For example, if you have a SIM card from Malaysia, you may use that SIM card to roam in China while getting 2GB of data per day for only 99RM ($21 US) per month. This may end up being more affordable than getting a SIM card in China. However, without a local Chinese phone number you won't be able to use some local services such as order takeout and buying tickets via WeChat.
+
 ## Setting up a V2ray Server
 
 ### Digital Ocean Account Setup
