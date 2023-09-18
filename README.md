@@ -92,7 +92,7 @@ If you want to avoid VPNs entirely, the simplest way is to use a SIM card from H
 ### Inbound Rules Configuration
 
 20. **Preferred Language Setup:**
-    - In your web browser settings, set "Chinese (Simplified)" as the preferred language for adding an inbound.
+    - In your web browser settings, set "Chinese (Simplified)" as the preferred language for adding an inbound. Panel is a little buggy and you won't be able to add inbounds without doing this first.
       ![Pasted Graphic 14](https://github.com/piephai/V2Ray/assets/65212311/dd60e835-4281-426b-9143-5e274d180ee2)
       ![Pasted Graphic 16](https://github.com/piephai/V2Ray/assets/65212311/a3cb3267-11d7-4d0a-a7f2-7105db37a2d0)
       <img width="752" alt="Pasted Graphic 17" src="https://github.com/piephai/V2Ray/assets/65212311/8e413279-a59e-44e5-857e-d9c5fa218562">
