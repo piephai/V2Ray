@@ -1,4 +1,4 @@
-# V2ray Server Setup Guide
+<img width="1486" alt="Pasted Graphic 23" src="https://github.com/piephai/V2Ray/assets/65212311/b8db9dcf-32cd-4a20-b5c4-1c2cf4f0b2e3"># V2ray Server Setup Guide
 
 I attempted to install V2Ray on several cloud hosting platforms, including AWS (including Lightsail) and Digital Ocean. Despite experimenting with numerous configurations, I was unable to locate a configuration that can reliably penetrate China's Great Firewall on AWS servers. Vultr had trouble accepting my payment card, so I had to look for options. I opted to use Digital Ocean. Digital Ocean has been running smoothly over several weeks, with excellent reliability and negligible speed loss.
 
@@ -54,9 +54,11 @@ If you want to avoid VPNs entirely, the simplest way is to use a SIM card from H
 
 12. **Access the Server Console:**
     - In the "Droplets" tab, click on your server, and then click "Console." Wait for the console to fully load.
+      ![Pasted Graphic 1](https://github.com/piephai/V2Ray/assets/65212311/5d1eca9e-6393-44f8-8aed-424d6eaace60)
+      <img width="1002" alt="Pasted Graphic 2" src="https://github.com/piephai/V2Ray/assets/65212311/fbfee5ac-c3ce-402d-a56b-072b346a6ee1">
 
 13. **Update Server Packages:**
-    - Run the command `apt update && apt upgrade` to update the server with the latest packages. When prompted, type "y" and press Enter to confirm.
+    - Run the command `export DEBIAN_FRONTEND=noninteractive && apt update -y && apt upgrade -y` to update the server with the latest packages.
 
 14. **Install X-Ray:**
     - Run the command `bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install_en.sh)`.
@@ -75,17 +77,25 @@ If you want to avoid VPNs entirely, the simplest way is to use a SIM card from H
 
 17. **Access Admin Panel in a Web Browser:**
     - Open a web browser and enter your server's IP address followed by the port number (e.g., "http://your_ip_address:54321").
+      <img width="1503" alt="Pasted Graphic 7" src="https://github.com/piephai/V2Ray/assets/65212311/d49c8b14-8af4-42b4-bc3a-fdfa852879df">
 
 18. **Log in to X-UI Admin Panel:**
     - Use the username and password you set up earlier to log in.
+      <img width="901" alt="Pasted Graphic 10" src="https://github.com/piephai/V2Ray/assets/65212311/dd6bab36-5a44-4ee3-874a-69d0dffcddc7">
 
 19. **Admin Panel Settings:**
     - Click on "Settings" and confirm the panel restart. Note the new URL for accessing the admin panel.
+      <img width="1710" alt="Pasted Graphic 11" src="https://github.com/piephai/V2Ray/assets/65212311/3154ddbe-6ca8-43a0-8589-9358b804a90e">
+      ![Pasted Graphic 12](https://github.com/piephai/V2Ray/assets/65212311/e1b672ac-c4a3-4a20-a64e-a300fd5cad88)
+
 
 ### Inbound Rules Configuration
 
 20. **Preferred Language Setup:**
     - In your web browser settings, set "Chinese (Simplified)" as the preferred language for adding an inbound.
+      ![Pasted Graphic 14](https://github.com/piephai/V2Ray/assets/65212311/dd60e835-4281-426b-9143-5e274d180ee2)
+      ![Pasted Graphic 16](https://github.com/piephai/V2Ray/assets/65212311/a3cb3267-11d7-4d0a-a7f2-7105db37a2d0)
+      <img width="752" alt="Pasted Graphic 17" src="https://github.com/piephai/V2Ray/assets/65212311/8e413279-a59e-44e5-857e-d9c5fa218562">
 
 21. **Add Inbound Rules:**
     - Refresh the admin panel and go to "Inbound" -> "Add inbound."
@@ -93,17 +103,26 @@ If you want to avoid VPNs entirely, the simplest way is to use a SIM card from H
     - Set the remark to your hostname and port to "443."
     - Toggle to enable "reality."
 
+*Note: Don’t worry if your information below the “reality” row is different to the screenshot as those are automatically populated.*
+
+![Pasted Graphic 21](https://github.com/piephai/V2Ray/assets/65212311/dd39e6c4-6f0a-4e45-a371-3010f4bfa189)
+
 22. **Add a User:**
     - Click the "+" button next to "Add user" and select "xtls-rprx-vision" as the flow.
+      ![Pasted Graphic 22](https://github.com/piephai/V2Ray/assets/65212311/bab08429-5cdc-41e4-b3a3-b2a022290228)
 
 23. **Create the Inbound:**
     - Click "Add" at the bottom of the page to create your first inbound.
+    <img width="1486" alt="Pasted Graphic 23" src="https://github.com/piephai/V2Ray/assets/65212311/fe644585-fc9f-4bc3-8454-85f2651ae9da">
 
 24. **Update X-Ray:**
     - In the X-UI admin panel, switch to the newest version of X-Ray on the status page and click "Restart X-ray."
+   ![Pasted Graphic 24](https://github.com/piephai/V2Ray/assets/65212311/58da2fee-8f1b-4fcd-b7f9-3ee445ba426a)
 
 25. **Export Links:**
     - You can export links and share them with your users. They just need to paste the link into their V2ray client.
+    ![Pasted Graphic 25](https://github.com/piephai/V2Ray/assets/65212311/eef2ebe3-8ce0-4d49-86ad-08a7f312b04a)
+
 
 ## Setting up a V2ray Client
 
