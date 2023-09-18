@@ -2,12 +2,16 @@
 
 ## Setting up a V2ray Server
 
+### Digital Ocean Account Setup
+
 1. **Create a Digital Ocean Account:**
-   - Sign up for a Digital Ocean account using a referral link, like this one: [Digital Ocean Referral Link](https://m.do.co/c/648197605dfe)
-   - Note: Students can get $200 credit for a year, while the referral program provides 2 months of credit.
+   - Sign up for a Digital Ocean account using a referral link, like this one: [Digital Ocean Referral Link](https://m.do.co/c/648197605dfe) this will give you $200 of credit to be used witihin 2 months.
+   - Note: Students can get $200 credit for a year via Github Education.
 
 2. **Add Billing Information:**
    - Add your billing information by linking a credit card to your Digital Ocean account. While other cloud providers can be used, AWS is not recommended due to potential issues.
+
+### Droplet Creation and Configuration
 
 3. **Create a Droplet:**
    - In the top right-hand corner, click "Create" and then select "Droplets."
@@ -21,11 +25,13 @@
 6. **Choose Virtual Machine Size:**
    - Opt for "Shared CPU: Basic."
 
-7. **Configure CPU Options:**
+7. **CPU Options:**
    - Select "Premium AMD." If you plan to use it with just a few devices (up to 8), choose the cheapest plan at $5/month.
 
-8. **Choose Authentication Method:**
+8. **Authentication Method:**
    - Select "Password" for now, or you can set up SSH authentication separately.
+
+### Initial Server Configuration
 
 9. **Set Hostname:**
    - Change the hostname to something of your choice, for organizational purposes.
@@ -36,6 +42,8 @@
 11. **Note the IP Address:**
     - After the server is created, note down the IP address as you'll need it later.
 
+### Server Software Setup
+
 12. **Access the Server Console:**
     - In the "Droplets" tab, click on your server, and then click "Console." Wait for the console to fully load.
 
@@ -45,14 +53,17 @@
 14. **Install X-Ray:**
     - Run the command `bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install_en.sh)` (without quotation marks).
 
-15. **Configuration Steps:** Follow the prompts for X-Ray installation:
-    - Type "y" to continue.
-    - Set up your username and password for the x-ui admin panel.
-    - Set the port to "54321."
-
+15. **X-Ray Configuration:**
+    - Follow the prompts for X-Ray installation:
+      - Type "y" to continue.
+      - Set up your username and password for the x-ui admin panel.
+      - Set the port to "54321."
+      
 16. **Access the Admin Panel:**
     - Type "x-ui" and press Enter.
     - Type "15" and press Enter to enable BBR.
+
+### Web-Based Admin Panel Access
 
 17. **Access Admin Panel in a Web Browser:**
     - Open a web browser and enter your server's IP address followed by the port number (e.g., "http://your_ip_address:54321").
@@ -60,12 +71,16 @@
 18. **Log in to X-UI Admin Panel:**
     - Use the username and password you set up earlier to log in.
 
-19. **Settings:** Click on "Settings" and confirm the panel restart. Note the new URL for accessing the admin panel.
+19. **Admin Panel Settings:**
+    - Click on "Settings" and confirm the panel restart. Note the new URL for accessing the admin panel.
 
-20. **Preferred Language:** In your web browser settings, set "Chinese (Simplified)" as the preferred language for adding an inbound.
+### Inbound Rules Configuration
+
+20. **Preferred Language Setup:**
+    - In your web browser settings, set "Chinese (Simplified)" as the preferred language for adding an inbound.
 
 21. **Add Inbound Rules:**
-    - Refresh the admin panel and go to "Inbound" -> "Add Inbound."
+    - Refresh the admin panel and go to "Inbound" -> "Add inbound."
     - Use the settings for "VLESS + XTLS + uTLS + REALITY."
     - Set the remark to your hostname and port to "443."
     - Toggle to enable "reality."
@@ -84,7 +99,7 @@
 
 ## Setting up a V2ray Client
 
-There are various V2ray clients available. For iOS and Mac, you can use Shadowrocket (a paid option). The setup process is similar across V2ray clients. Here's a brief overview:
+### V2ray Client Installation and Configuration
 
 1. **Install a V2ray Client:**
    - Download and install a V2ray client, such as Shadowrocket, from the App Store or a trusted source.
