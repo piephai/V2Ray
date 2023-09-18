@@ -1,4 +1,4 @@
-V2ray Server Setup Guide
+# V2ray Server Setup Guide
 
 I attempted to install V2Ray on several cloud hosting platforms, including AWS (including Lightsail) and Digital Ocean. Despite experimenting with numerous configurations, I was unable to locate a configuration that can reliably penetrate China's Great Firewall on AWS servers. Vultr had trouble accepting my payment card, so I had to look for options. I opted to use Digital Ocean. Digital Ocean has been running smoothly over several weeks, with excellent reliability and negligible speed loss.
 
