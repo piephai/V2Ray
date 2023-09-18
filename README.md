@@ -80,7 +80,7 @@ If you want to avoid VPNs entirely, the simplest way is to use a SIM card from H
       <img width="1503" alt="Pasted Graphic 7" src="https://github.com/piephai/V2Ray/assets/65212311/d49c8b14-8af4-42b4-bc3a-fdfa852879df">
 
 18. **Log in to X-UI Admin Panel:**
-    - Use the username and password you set up earlier to log in.
+    - Use the username and password you set up in step 15 to log in.
       <img width="901" alt="Pasted Graphic 10" src="https://github.com/piephai/V2Ray/assets/65212311/dd6bab36-5a44-4ee3-874a-69d0dffcddc7">
 
 19. **Admin Panel Settings:**
