@@ -1,20 +1,21 @@
 # V2ray Server Setup Guide
 
-I attempted to install V2Ray on several cloud hosting platforms, including AWS (including Lightsail) and Digital Ocean. Despite experimenting with numerous configurations, I was unable to locate a configuration that can reliably penetrate China's Great Firewall on AWS servers. Vultr had trouble accepting my payment card, so I had to look for options. I opted to use Digital Ocean. Digital Ocean has been running smoothly over several weeks, with excellent reliability and negligible speed loss.
+I tried to install V2Ray on several cloud hosting platforms, including AWS (including Lightsail) and Digital Ocean. However, none of the configurations I experimented with could reliably penetrate China's Great Firewall on AWS servers. Vultr rejected my payment card, so I had to look for alternatives. I chose Digital Ocean. Digital Ocean has been running smoothly for several weeks, with excellent reliability and minimal speed loss.
 
-Since each server only costs $5 a month in China, using this system has been economical. Although there is the potential for commercial use, my main objective is to provide this information to travellers to China so they can avoid spending $30/month on services like Astrill that frequently require moving between servers. Both Astrill and the V2Ray, in my experience, worked, however I found the V2Ray setup to be more dependable.
+Using this system has been economical, as each server only costs $5 a month in China. Although it has the potential for commercial use, my main goal is to provide this information to travelers to China so they can save $30/month on services like Astrill that often require switching between servers. Both Astrill and V2Ray worked in my experience, but I found the V2Ray setup to be more reliable.
 
-However, there are a few drawbacks as compared to other VPNs like Astrill, such as the lack of URL-specific bypasses. This may not be a major concern for me while travelling in China, but it may be an issue if you plan to reside here for an extended period of time.
+However, there are some drawbacks compared to other VPNs like Astrill, such as the lack of URL-specific bypasses. This may not be a big issue for me while traveling in China, but it may be a problem if you plan to live here for a long time.
 
-If you want to avoid VPNs entirely, the simplest way is to use a SIM card from Hong Kong (if you're flying in from there) or roam with a SIM card from your home country. For example, if you have a SIM card from Malaysia, you may use that SIM card to roam in China while getting 2GB of data per day for only 99RM ($21 US) per month. This may end up being more affordable than getting a SIM card in China. However, without a local Chinese phone number you won't be able to use some local services such as order takeout and buying tickets via WeChat.
+If you want to avoid VPNs altogether, the easiest way is to use a SIM card from Hong Kong (if you're flying in from there) or roam with a SIM card from your home country. For example, if you have a SIM card from Malaysia, you can use that SIM card to roam in China while getting 2GB of data per day for only 99RM ($21 US) per month. This may be cheaper than getting a SIM card in China. However, without a local Chinese phone number, you won't be able to use some local services such as ordering takeout and buying tickets via WeChat.
+
 
 ## Setting up a V2ray Server
 
 ### Digital Ocean Account Setup
 
 1. **Create a Digital Ocean Account:**
-   - Sign up for a Digital Ocean account using a referral link, like this one: [Digital Ocean Referral Link](https://m.do.co/c/648197605dfe) this will give you $200 of credit to be used witihin 2 months.
-   - Note: Students can get $200 credit that is valid for year via Github Education.
+   - Sign up for a Digital Ocean account using a referral link, like this one: [Digital Ocean Referral Link](https://m.do.co/c/648197605dfe) this will give you $200 of credit to be used within 2 months.
+   - Note: Students can get a $200 credit that is valid for a year via GitHub Education.
 
 2. **Add Billing Information:**
    - Add your billing information by linking a credit card to your Digital Ocean account. While other cloud providers can be used, AWS is not recommended due to potential issues.
@@ -25,7 +26,7 @@ If you want to avoid VPNs entirely, the simplest way is to use a SIM card from H
    - In the top right-hand corner, click "Create" and then select "Droplets."
 
 4. **Configure Server Location:**
-   - Choose a server location that's closest to where you'll be in China. For example, if you'll be in the eastern area of China, select San Francisco. You can create multiple servers in different locations if needed.
+   - Choose a server location that's closest to where you'll be in China. For example, if you're in the eastern area of China, select San Francisco. You can create multiple servers in different locations if needed.
 
 5. **Select OS and Version:**
    - Choose "Ubuntu" as the OS image and select "Ubuntu 22.04 LTS (x64)" as the version.
